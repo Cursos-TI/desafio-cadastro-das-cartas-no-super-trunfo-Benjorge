@@ -13,7 +13,8 @@ int main() {
     char Estado, Codigo_da_Carta [3], Nome_da_Cidade [30];
     int Populacao, Numero_de_Pontos_Turisticos;
     float Area, PIB;
-
+    float Densidade_Populacional, PIB_Per_Capita;
+    
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -43,8 +44,13 @@ int main() {
     printf ("Digite o número de pontos turísticos da cidade da Carta 1:\n");
     scanf ("%d", &Numero_de_Pontos_Turisticos);
 
+    Densidade_Populacional = (float)Populacao/Area;
+
+    PIB_Per_Capita = PIB/(float)Populacao;
+
     printf("CARTA 1:\n");
-    printf ("Estado: %c\n - Código da Carta: %s\n - Nome da Cidade: %s\n - População: %d\n - Área (km²): %.2f\n - PIB: %.2f\n - Número de Pontos Turísticos: %d\n", Estado, Codigo_da_Carta, Nome_da_Cidade, Populacao, Area, PIB, Numero_de_Pontos_Turisticos);
+    printf ("Estado: %c\n - Código da Carta: %s\n - Nome da Cidade: %s\n - População: %d\n - Área (km²): %.2f\n - PIB: %.2f reais\n - Número de Pontos Turísticos: %d\n", Estado, Codigo_da_Carta, Nome_da_Cidade, Populacao, Area, PIB, Numero_de_Pontos_Turisticos);
+    printf (" - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n", Densidade_Populacional, PIB_Per_Capita);
     printf ("\n");
     
 
@@ -72,7 +78,10 @@ int main() {
 
     printf ("Digite o número de pontos turísticos da cidade da Carta 2:\n");
     scanf ("%d", &Numero_de_Pontos_Turisticos);
+    
+    Densidade_Populacional = (float)Populacao/Area;
 
+    PIB_Per_Capita = PIB/(float)Populacao;
 
 
     // Exibição dos Dados das Cartas:
@@ -80,8 +89,8 @@ int main() {
     // Exiba os valores inseridos para cada carta, imprima cada informação em uma linha separada, com uma descrição clara.
 
     printf("CARTA 2:\n");
-    printf ("Estado: %c\n - Código da Carta: %s\n - Nome da Cidade: %s\n - População: %d\n - Área (km²): %.2f\n - PIB: %.2f\n - Número de Pontos Turísticos: %d\n", Estado, Codigo_da_Carta, Nome_da_Cidade, Populacao, Area, PIB, Numero_de_Pontos_Turisticos);
-
+    printf ("Estado: %c\n - Código da Carta: %s\n - Nome da Cidade: %s\n - População: %d\n - Área (km²): %.2f\n - PIB: %.2f reais\n - Número de Pontos Turísticos: %d\n", Estado, Codigo_da_Carta, Nome_da_Cidade, Populacao, Area, PIB, Numero_de_Pontos_Turisticos);
+    printf (" - Densidade Populacional: %.2f hab/km²\n - PIB per Capita: %.2f reais\n", Densidade_Populacional, PIB_Per_Capita);
 
     return 0;
 }

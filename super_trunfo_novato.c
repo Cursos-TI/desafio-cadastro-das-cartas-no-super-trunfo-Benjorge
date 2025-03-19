@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 2 - Cadastro das Cartas
+// Tema 2 - Cadastro das Cartas - Nível Novato.
 // Teste Jorge Luiz Franco matrícula 202501191231.
 
 int main() {
@@ -20,7 +20,6 @@ int main() {
     
 
     printf ("Cadastrando a Carta 1\n\n");
-    //printf ("\n");
     
     printf ("Digite uma letra para o Estado da Carta 1:\n"); //Digitar uma letra para o Estado.
     scanf ("%c", &Estado1);
@@ -96,6 +95,7 @@ int main() {
     } else {
         printf("Resultado: Carta2 (%s) venceu!\n", Nome_da_Cidade2);
     }
+
 
     
     

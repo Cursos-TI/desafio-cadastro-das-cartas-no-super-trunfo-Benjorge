@@ -15,7 +15,7 @@ int main() {
     char Nome_da_Cidade1[30] = "SAOPAULO-SP";
     unsigned long int Populacao1 = 12325000;
     float Area1 = 1527.11;
-    float PIB1 = 699280000000;
+    float PIB1 = 699280;
     int Numero_de_Pontos_Turisticos1 = 30;
     
     float Densidade_Populacional1 = (float)Populacao1/Area1;
@@ -28,11 +28,11 @@ int main() {
     
     // Informações Carta 2:
     char Estado2 = 'B';
-    char Codigo_da_Carta2[3] = "B02 ";
+    char Codigo_da_Carta2[4] = "B02";
     char Nome_da_Cidade2[30] = "RIODEJANEIRO-RJ";
     unsigned long int Populacao2= 6748000;
     float Area2 = 1200;
-    float PIB2 = 300500000000;
+    float PIB2 = 300500;
     int Numero_de_Pontos_Turisticos2 = 50;
     
     float Densidade_Populacional2 = (float)Populacao2/Area2;
@@ -149,7 +149,7 @@ int main() {
                 break;
         
             case 3:
-                printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+                printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
                 PrimeiroAtributo = PIB1;
                 ReconhecimentoCarta2A = PIB2;
                 break;
@@ -183,7 +183,7 @@ int main() {
                 break;
         
             case 3:
-                printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+                printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
                 SegundoAtributo = PIB1;
                 ReconhecimentoCarta2B = PIB2;
                 break;
@@ -204,7 +204,7 @@ int main() {
 
             printf("Soma dos atributos da Carta 1: %.2f.\n", (float) PrimeiroAtributo + (float)SegundoAtributo);
             printf("Soma dos atributos da Carta 2: %.2f.\n", (float) ReconhecimentoCarta2A + (float)ReconhecimentoCarta2B);
-            printf("A Carta 1 venceu!!!\n");
+            printf("A Carta 1 venceu!!! Pois a Carta 1 venceu nos dois atributos\n");
 
 
     } else if(Resultado1 != Resultado2){
@@ -224,7 +224,7 @@ int main() {
             break;
     
         case 3:
-            printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+            printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
             PrimeiroAtributo = PIB1;
             ReconhecimentoCarta2A = PIB2;
             break;
@@ -258,7 +258,7 @@ int main() {
             break;
     
         case 3:
-            printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+            printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
             SegundoAtributo = PIB1;
             ReconhecimentoCarta2B = PIB2;
             break;
@@ -279,7 +279,7 @@ int main() {
 
         printf("Soma dos atributos da Carta 1: %.2f.\n", (float) PrimeiroAtributo + (float)SegundoAtributo);
         printf("Soma dos atributos da Carta 2: %.2f.\n", (float) ReconhecimentoCarta2A + (float)ReconhecimentoCarta2B);
-        printf("O jogo empatou!!.\n");
+        printf("O jogo empatou!! Pois cada Carta venceu em pelo menos um dos atributos.\n");
     } else {
         switch (PrimeiroAtributo)
         {
@@ -296,7 +296,7 @@ int main() {
             break;
     
         case 3:
-            printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+            printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
             PrimeiroAtributo = PIB1;
             ReconhecimentoCarta2A = PIB2;
             break;
@@ -330,7 +330,7 @@ int main() {
             break;
     
         case 3:
-            printf("PIB da Carta 1: %.2f.\nÁrea da Carta 2: %.2f.\n", PIB1, PIB2);
+            printf("PIB da Carta 1: %.2f.\nPIB da Carta 2: %.2f.\n", PIB1, PIB2);
             SegundoAtributo = PIB1;
             ReconhecimentoCarta2B = PIB2;
             break;
@@ -351,7 +351,7 @@ int main() {
 
         printf("Soma dos atributos da Carta 1: %.2f.\n", (float) PrimeiroAtributo + (float)SegundoAtributo);
         printf("Soma dos atributos da Carta 2: %.2f.\n", (float) ReconhecimentoCarta2A + (float)ReconhecimentoCarta2B);
-        printf("A Carta 2 ganhou!!!");
+        printf("A Carta 2 ganhou!!! Pois a Carta 2 venceu nos dois atributos");
     }
     
 
